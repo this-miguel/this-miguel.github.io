@@ -28,24 +28,87 @@
 
       /* SOCIAL STYLES*/
       .social-link {
-        color: blue;
+        background: rgba(150, 150, 150, 0.5);
+        border-radius: 99px;
+        box-sizing: border-box;
+        color: #fff;
+        display: inline-block;
+        font-family: helvetica, arial, sans;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 2.5em;
+        padding-top: 0.85em ;
+        /* line-height: specifies the distance between two lines of text, accepts size values.
+           and for example: 1.5 is equivalent to 150%.
+        */
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        /*
+        vertical align specifies where an inline shows in a line of text, it accepts particular values.
+         */
+        vertical-align: middle;
+        width: 2.5em;
+
+      }
+
+      .social-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .social-list > li {
+        display: inline-block;
+          margin: 0 0.5em
       }
 
       /* BIO STYLES */
+
       .bio-wrapper {
+        font-size: 24px;
+        /*
+        as not height is set and this contains floated elements this will push the container height to fit the
+        largest child element
+        */
+        overflow: hidden;
+        max-width: 960px;
+        /*
+
+        margin auto only works for sides (horizontally) and with a set width because  the browser needs to know
+        how many space on the sides will be distributing.
+        */
+        margin: auto;
       }
 
       .bio-box {
         border: 1px solid black;
+        box-sizing: border-box;
         font-size: 1rem;
-        width: 50% /* percentage is relative to its parent*/
+        float:left;
+        margin: 40px 1% 0;
+        padding: 0 2% 2%;
+        width: 23%; /* percentage is relative to its parent*/
       }
+
+      .bio-copy {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+
       .bio-copy a {
         color: green;
         font-size: 1em;
       }
       .bio-box h3 {
-        font-size: 1.5rem;
+        /*font-size: 1.5em;*/
+        color: #fff;
+        margin: -40px 0 1em;
+        text-align: center;
+      }
+      .bio-box img {
+        width: 100%;
+
       }
 
     </style>
@@ -53,21 +116,22 @@
   <body>
     <div class="full-hero hero-home">
       <h1>I'm an h1</h1>
-      <ul>
+      <ul class="social-list">
         <li>
-          <a href="http://example.com/" >Link</a>
+          <a href="http://example.com/" class="social-link" >fb</a>
         </li>
         <li>
-          <a href="http://example.com/" >Link</a>
+          <a href="http://example.com/" class="social-link">tw</a>
         </li>
         <li>
-          <a href="http://example.com/" >Link</a>
+          <a href="http://example.com/" class="social-link">gh</a>
         </li>
       </ul>
     </div>
     <h2>I'm an h2</h2>
     <div class="bio-wrapper">
       <div id="exec-bio" class="bio-box">
+        <img src="http://placekitten.com/g/400/400" alt="">
         <h3>Michael Hartl</h3>
         <a href="http://twitter.com/mhartl" class="social-link">here</a>
         <div class="bio-copy">
@@ -87,6 +151,7 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400" alt="">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
         <div class="bio-copy">
@@ -99,6 +164,7 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400" alt="">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
         <div class="bio-copy">
@@ -109,6 +175,19 @@
           </p>
         </div>
       </div>
+        <div class="bio-box">
+          <img src="http://placekitten.com/g/400/400" alt="">
+          <h3>Anonymous</h3>
+          <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
+          <div class="bio-copy">
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, minima obcaecati repudiandae temporibus voluptatem. Animi beatae corporis ducimus eligendi ipsum modi nemo odit perferendis reiciendis sit. Repellendus, sunt tempore.
+              </p>
+          </div>
+        </div>
     </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut corporis cumque dolor eaque, earum et fugiat incidunt ipsam itaque omnis perferendis perspiciatis quasi quisquam quo, reprehenderit sint tenetur vitae.
+    </p>
   </body>
 </html>
