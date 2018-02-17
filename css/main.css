@@ -66,6 +66,8 @@ h2 {
 
 /* HEADER STYLES */
 .header {
+  background-color: #000;
+  color:#fff;
 
 }
 
@@ -79,13 +81,13 @@ h2 {
   margin-left: 1em;
 }
 
-.header-nav > li + li {
-  border-left: 1px solid rgba( 0, 0, 0, 0.3);
+.header-nav > li ~ li {
+  border-left: 1px solid rgba( 255, 255, 255, 0.3);
   padding-left: 1em;
 }
 
 .header-nav a {
-  color: #000;
+  color: #fff;
   font-size: 0.8rem;
   text-decoration: none;
   font-weight: bold;
@@ -102,12 +104,27 @@ h2 {
 }
 
 .header-nav > li:first-child a:hover {
-  color: #000;
+  color: #fff;
+}
+
+.header-logo {
+  background-color: black;
+  display: block;
+  height: 10vh;
+  position: relative;
+  width: 10vh;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header-logo img {
+  height: 80%;
 }
 
 .header-logo:hover,
 .header-logo:active {
-  opacity: 0.5;
+  background-color: #ed6e2f;
 }
 
 /* HERO STYLES */
