@@ -183,6 +183,16 @@ h2 + p {
   padding-top: 10vh;
 }
 
+.full-hero:after {
+  color: #fff;
+  content: '﹀';
+  font-size: 36px;
+  position: absolute;
+  bottom: 2vh;
+  left: 50vw;
+  transform: translateX(-50%) ;
+}
+
 .hero-content h1 {
   color: rgba( 255, 255, 255, 0.7);
   font-size: 7vw;
