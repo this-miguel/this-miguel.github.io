@@ -184,13 +184,16 @@ h2 + p {
 }
 
 .full-hero:after {
+  border: 10px solid;
+  border-color: white transparent transparent;
   color: #fff;
-  content: '﹀';
-  font-size: 36px;
+  content: '';
+  height: 0;
   position: absolute;
   bottom: 2vh;
   left: 50vw;
   transform: translateX(-50%) ;
+  width: 0;
 }
 
 .hero-content h1 {
