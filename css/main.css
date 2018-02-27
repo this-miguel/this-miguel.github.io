@@ -62,14 +62,18 @@ h1 {
 }
 
 a {
-  color: #f00
+  color: #6397b5
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2em;
 }
 
-h2 + p {
+p {
+  line-height: 1.5;
+}
+
+h2 ~ p {
   font-size: 0.8em;
   font-style: italic;
   margin: 1em auto 0;
@@ -294,7 +298,6 @@ h2 + p {
   font-size: 0.8rem;
 }
 
-
 /* BIO STYLES */
 
 .bio-wrapper {
@@ -314,34 +317,29 @@ h2 + p {
 }
 
 .bio-box {
-  border: 1px solid black;
   box-sizing: border-box;
   font-size: 1rem;
   float:left;
-  margin: 40px 1% 0;
-  padding: 0 2% 2%;
-  width: 23%; /* percentage is relative to its parent*/
+  margin: 6rem 0 0;
+  padding: 0 3%;
+  width: 33%; /* percentage is relative to its parent*/
 }
 
 .bio-box .social-link {
   display: block; /* So the margins can collapse with other block elements margins.*/
-  margin:  2em 0 1em;
+  margin:  2em auto 1em;
 }
 
 .bio-copy {
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 0.75em;
 }
 
-.bio-copy a {
-  color: green;
-  font-size: 1em;
-}
 .bio-box h3 {
   /*font-size: 1.5em;*/
   color: #fff;
   margin: -40px 0 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 .bio-box img {
   width: 100%;
