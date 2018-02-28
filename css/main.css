@@ -63,6 +63,7 @@ body {
   flex: 1;
   padding-top: 10vh;
   width: 100%;
+  display: flex;
 }
 
 h1 {
@@ -186,6 +187,35 @@ h2 ~ p {
 
 .footer-nav a {
   color: #ccc;
+}
+
+/* COLUMN STYLES */
+
+.col-three {
+  display: flex;
+  flex: 1;
+}
+
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.col-three .col ~ .col { /* All columns that follow a column.*/
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+
+.col-three .col-content {
+  flex: 1;
+  background-color: #6397b5;
+}
+
+.col-three .col-aside {
+  flex: 0 1 20em;
 }
 
 /* HERO STYLES */
